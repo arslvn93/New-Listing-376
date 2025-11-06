@@ -1,7 +1,7 @@
 /**
  * Site Configuration
  * This file contains all configurable content for the website
- * Last updated: 2025-11-06T04:42:45.435Z
+ * Last updated: 2025-11-06T04:45:13.285Z
  */
 
 // contactInfo configuration
@@ -93,17 +93,7 @@ export const galleryImages = [
   }
 ];
 
-// heroVideo configuration
-// export const heroVideo = {
-//   url: "",
-//   type: "video/mp4",
-//   autoplay: true,
-//   loop: true,
-//   muted: true,
-//   playsInline: true
-// };
-
-// homeShowcaseSections configuration  
+// homeShowcaseSections configuration
 export const homeShowcaseSections = [
   {
     id: "section1",
@@ -133,15 +123,14 @@ export const homeShowcaseSections = [
 
 // neighborhood configuration
 export const neighborhood = {
-  name: "Hearne",
+  name: "Rose Marie",
   city: "Hearne",
-  description: "Hearne's premier destination for culture, dining, and urban living.",
+  description: "Rose Marie is a quiet, small‑town neighborhood in Hearne rooted in the city's railroad legacy and wartime history. Residents benefit from easy access to US 79, US 190 and Texas State Highway 6, close proximity to Bryan/College Station and Texas A&M University, and a relaxed community lifestyle with local dining, parks and historic attractions.",
   highlights: [
-    "Steps to theaters, dining, and entertainment venues",
-    "Direct access to PATH underground walkway", 
-    "TTC subway and streetcar connections",
-    "Walk to financial district and shopping",
-    "Vibrant urban lifestyle with excellent walk score"
+    "Historic Hearne Railroad Depot, offering exhibits on local and railroad history",
+    "Camp Hearne WWII Historic Site, featuring original POW camp foundations and artifacts",
+    "Easy access to major highways (US 79, US 190, Texas State Highway 6) connecting to major Texas cities",
+    "Small‑town charm with quality local dining, boutique shopping such as Tammy Kay’s Boutique, and parks for outdoor living"
   ]
 };
 
@@ -149,45 +138,59 @@ export const neighborhood = {
 export const neighborhoodAmenities = [
   {
     id: 1,
-    name: "Local Grocery Store",
-    distance: "0.2 miles",
+    name: "Tammy Kay’s Boutique",
+    distance: "",
     category: "shopping",
     iconName: "ShoppingBag"
   },
   {
     id: 2,
-    name: "Nearby Park",
-    distance: "0.1 miles", 
+    name: "Godfrey Gentry Park",
+    distance: "",
     category: "recreation",
     iconName: "Leaf"
   },
   {
     id: 3,
-    name: "Public School",
-    distance: "0.6 miles",
-    category: "education", 
+    name: "Texas A&M University (Bryan/College Station area)",
+    distance: "",
+    category: "education",
     iconName: "School"
   },
   {
     id: 4,
-    name: "Fine Dining",
-    distance: "0.2 miles",
+    name: "Mi Casita Cafe",
+    distance: "",
     category: "dining",
-    iconName: "Wine"
+    iconName: "Coffee"
   },
   {
     id: 5,
-    name: "Casual Dining",
-    distance: "0.4 miles",
+    name: "The Oxtail Factory",
+    distance: "",
     category: "dining",
     iconName: "Utensils"
   },
   {
     id: 6,
-    name: "Transit Station",
-    distance: "0.4 miles",
+    name: "Hearne Cefco C Store",
+    distance: "",
     category: "transportation",
-    iconName: "Train"
+    iconName: "Car"
+  },
+  {
+    id: 7,
+    name: "Crossroads of Texas Mural",
+    distance: "",
+    category: "recreation",
+    iconName: "Users"
+  },
+  {
+    id: 8,
+    name: "US 79 / US 190 / Texas State Highway 6 (Highway access)",
+    distance: "",
+    category: "business",
+    iconName: "Wifi"
   }
 ];
 
@@ -196,34 +199,26 @@ export const neighborhoodStats = [
   {
     id: 1,
     title: "Walk Score",
-    value: "95/100",
-    caption: "Walker's Paradise",
+    value: "26/100",
+    caption: "Car-Dependent",
     iconName: "BadgeCheck",
     color: "bg-green-500"
   },
   {
     id: 2,
-    title: "Transit Score", 
-    value: "94/100",
-    caption: "Excellent Transit",
+    title: "Transit Score",
+    value: "30/100",
+    caption: "Some Transit",
     iconName: "Compass",
     color: "bg-blue-500"
   },
   {
     id: 3,
-    title: "School Rating",
-    value: "8/10", 
-    caption: "Great Schools",
-    iconName: "School",
+    title: "Bike Score",
+    value: "33/100",
+    caption: "Somewhat Bikeable",
+    iconName: "Compass",
     color: "bg-indigo-500"
-  },
-  {
-    id: 4,
-    title: "Commute Time",
-    value: "8 min",
-    caption: "To Financial District",
-    iconName: "Clock", 
-    color: "bg-amber-500"
   }
 ];
 
@@ -243,7 +238,7 @@ export const openHouseBenefits = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "The district has a student-teacher ratio of 10 to 1 and serves students in grades PK-12.",
     iconName: "GraduationCap"
   },
@@ -277,7 +272,12 @@ export const openHouseDetails = {
   ctaText: "RSVP for Open House",
   virtualTourAvailable: false,
   virtualTourUrl: "",
-  allOpenHouses: [{"date":"Saturday, November 29, 2025","time":"2:00 PM - 4:00 PM"}]
+  allOpenHouses: [
+    {
+      date: "Saturday, November 29, 2025",
+      time: "2:00 PM - 4:00 PM"
+    }
+  ]
 };
 
 // packageItems configuration
@@ -296,7 +296,7 @@ export const packageItems = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "The district has a student-teacher ratio of 10 to 1 and serves students in grades PK-12.",
     iconName: "GraduationCap"
   },
@@ -340,7 +340,7 @@ export const property = {
   status: "For Sale",
   description: "Biggest lot on the block",
   shortDescription: "3 BEDS + 2 BATHS in Hearne",
-longDescription: "Biggest lot on the block, Recent Upgrades, Quiet Neighborhood",
+  longDescription: "Biggest lot on the block, Recent Upgrades, Quiet Neighborhood",
   mainFeatures: [],
   propertyType: "Detached",
   heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1762403945594-IMG_3522_hdr.jpg",
@@ -359,7 +359,7 @@ export const siteBranding = {
   favicon: "/favicon.ico",
   colors: {
     primary: "#D9A566",
-    primaryDark: "#8B6839", 
+    primaryDark: "#8B6839",
     primaryLight: "#E6C38C",
     dark: "#111111",
     light: "#FFFFFF"
@@ -387,7 +387,7 @@ export const testimonials = [
   {
     id: 1,
     name: "David Chen",
-    role: "Recent Homebuyer", 
+    role: "Recent Homebuyer",
     content: "Yvonne Quintero provided exceptional service and found us exactly what we were looking for in Hearne.",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg"
   },
@@ -400,9 +400,10 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Mark Williams", 
+    name: "Mark Williams",
     role: "Neighborhood Resident",
     content: "Living in this area, you appreciate the convenience and lifestyle. Yvonne Quintero knows the market incredibly well.",
     avatar: "https://randomuser.me/api/portraits/men/35.jpg"
   }
 ];
+
